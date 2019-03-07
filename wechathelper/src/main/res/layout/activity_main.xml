@@ -245,8 +245,8 @@
                 style="@style/SettingLayout"
                 app:external_path="@string/external_path"
                 app:is_external="true"
-                app:label_text="隐藏“发现页”"
-                app:preferences_key="@string/pre_key_hide_discover"
+                app:label_text="极简模式"
+                app:preferences_key="@string/pre_key_only_show_chat"
                 app:subheading_text="设置改变需重启微信" />
 
             <com.wuxiaosu.widget.SettingLabelView

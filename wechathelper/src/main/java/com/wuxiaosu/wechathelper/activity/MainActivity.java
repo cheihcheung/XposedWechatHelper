@@ -57,9 +57,6 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.rl_step)
     RadioGroup rlStep;
 
-    private final String[] wechatSupportVersions =
-            new String[]{"6.6.0", "6.6.1", "6.6.2", "6.6.3", "6.6.5", "6.6.6"};
-
     private final static int EXTERNAL_STORAGE_REQUEST_CODE = 999;
 
     @Override
@@ -208,7 +205,7 @@ public class MainActivity extends BaseActivity {
         TextView mTvVersionName = view.findViewById(R.id.tv_version_name);
         TextView mTvInfo = view.findViewById(R.id.tv_info);
         final TextView mTvUrl = view.findViewById(R.id.tv_url);
-        mTvUrl.setText(Html.fromHtml("<a href=''>https://www.coolapk.com/apk/com.wuxiaosu.wechathelper</a>"));
+        mTvUrl.setText(Html.fromHtml("<a href=''>https://github.com/wuxiaosu/XposedWechatHelper</a>"));
         mTvUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -216,7 +213,7 @@ public class MainActivity extends BaseActivity {
             }
         });
         mTvVersionName.setText(getString(R.string.app_name) + " v" + BuildConfig.VERSION_NAME);
-        mTvInfo.setText("可以请作者喝杯豆浆"
+        mTvInfo.setText("进群一起玩"
                 + getContactInfo()
                 + "\n更多详情：");
         AlertDialog alertDialog = new AlertDialog.Builder(this)
@@ -228,7 +225,7 @@ public class MainActivity extends BaseActivity {
 
     private String getContactInfo() {
         return "\nQ群：[123320001]\n" +
-                "微信群加：[CSYJZF]\n";
+                "或者请作者喝杯豆浆\n";
     }
 
     private void sendURLIntent(String url) {
